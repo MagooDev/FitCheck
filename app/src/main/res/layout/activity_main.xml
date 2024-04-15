@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/my_yellow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/splashBackground"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.75"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background_white" />
+
+    <ImageView
+        android:id="@+id/splashBlackBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backround_shape_black" />
+
+    <ImageView
+        android:id="@+id/splashJacket"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/splashText1"
+        app:layout_constraintEnd_toEndOf="@+id/splashText1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/splashText1"
+        app:layout_constraintTop_toTopOf="@+id/splashBackground"
+        app:layout_constraintVertical_bias="0.92"
+        app:srcCompat="@drawable/jacket_pink" />
+
+    <ImageView
+        android:id="@+id/splashTshirt"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/splashText1"
+        app:layout_constraintEnd_toEndOf="@+id/splashText1"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="@+id/splashText1"
+        app:layout_constraintTop_toTopOf="@+id/splashBackground"
+        app:layout_constraintVertical_bias="0.92"
+        app:srcCompat="@drawable/tshirt_purple" />
+
+    <ImageView
+        android:id="@+id/splashDress"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/splashText1"
+        app:layout_constraintEnd_toEndOf="@+id/splashText1"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="@+id/splashText1"
+        app:layout_constraintTop_toTopOf="@+id/splashBackground"
+        app:layout_constraintVertical_bias="0.92"
+        app:srcCompat="@drawable/dress_teal" />
+
+    <ImageView
+        android:id="@+id/splashShirt"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/splashText1"
+        app:layout_constraintEnd_toEndOf="@+id/splashText1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/splashText1"
+        app:layout_constraintTop_toTopOf="@+id/splashBackground"
+        app:layout_constraintVertical_bias="0.92"
+        app:srcCompat="@drawable/shirt_yellow" />
+
+    <TextView
+        android:id="@+id/splashText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/anomaly"
+        android:shadowColor="#997a45"
+        android:shadowDx="10"
+        android:shadowDy="15"
+        android:shadowRadius="2"
+        android:text="@string/fit_check_logo"
+        android:textColor="@color/my_yellow"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/splashBackground"
+        app:layout_constraintEnd_toEndOf="@+id/splashBackground"
+        app:layout_constraintStart_toStartOf="@+id/splashBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
