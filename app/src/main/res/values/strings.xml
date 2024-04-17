@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">FitCheckSocialMedia</string>
     <string name="fit_check_logo">Fit Check</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="submit">Submit</string>
 </resources>

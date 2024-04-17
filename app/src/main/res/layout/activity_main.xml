@@ -85,7 +85,7 @@
         android:id="@+id/splashText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/anomaly"
+        android:fontFamily="@font/anomaly_regular"
         android:shadowColor="#997a45"
         android:shadowDx="10"
         android:shadowDy="15"
