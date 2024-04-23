@@ -23,6 +23,20 @@
         app:srcCompat="@drawable/background_white" />
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilePictureBack"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:alpha="0.4"
+        app:shapeAppearance="@style/Octagon"
+        app:layout_constraintStart_toStartOf="@+id/addProfilePicture"
+        app:layout_constraintTop_toTopOf="@+id/addProfilePicture"
+        app:layout_constraintBottom_toBottomOf="@id/addProfilePicture"
+        app:layout_constraintEnd_toEndOf="@id/addProfilePicture"
+        app:srcCompat="@drawable/backround_shape_black" />
+
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/addProfilePicture"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -61,7 +75,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:fontFamily="@font/anomaly_regular"
+            android:fontFamily="@font/caviar_dreams_bold"
             android:letterSpacing="0.1" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -88,7 +102,7 @@
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/anomaly_regular"
+            android:fontFamily="@font/caviar_dreams_bold"
             android:letterSpacing="0.1" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -116,29 +130,68 @@
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/anomaly_regular"
+            android:fontFamily="@font/caviar_dreams_bold"
             android:textSize="16sp"
             android:letterSpacing="0.1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/submitButton"
         style="@style/Widget.Material3.Button.ElevatedButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:fontFamily="@font/anomaly_regular"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/my_purple"
+        android:fontFamily="@font/caviar_dreams_bold"
         android:letterSpacing="0.1"
+        android:text="@string/submit"
         android:textColor="@color/my_white"
         android:textSize="16sp"
-        android:backgroundTint="@color/my_purple"
-        app:shapeAppearance="@style/CutCorners"
         app:icon="@drawable/more_up"
         app:iconGravity="end"
         app:iconTint="@color/my_white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/newPassword"
-        android:layout_marginTop="20dp"
-        android:text="@string/submit"/>
+        app:shapeAppearance="@style/CutCorners" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/loginBack"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:alpha="0.8"
+        app:shapeAppearance="@style/Octagon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/backround_shape_white" />
+
+    <TextView
+        android:id="@+id/loginQuestionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Have An Account?"
+        android:fontFamily="@font/caviar_dreams_bold"
+        app:layout_constraintBottom_toBottomOf="@id/loginBack"
+        app:layout_constraintEnd_toEndOf="@id/loginBack"
+        app:layout_constraintStart_toStartOf="@id/loginBack"
+        app:layout_constraintTop_toTopOf="@+id/loginBack"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:fontFamily="@font/caviar_dreams_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginQuestionText" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
