@@ -79,5 +79,9 @@ class RegisterActivity : AppCompatActivity() {
         binding.addProfilePicture.setOnClickListener {
             launcher.launch("image/&")
         }
+        binding.loginText.setOnClickListener {
+            startActivity(Intent(this@RegisterActivity,LoginActivity::class.java))
+            finish()
+        }
     }
 }

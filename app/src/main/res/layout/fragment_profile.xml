@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    tools:context=".fragments.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilePictureBack"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="@id/addProfilePicture"
+            app:layout_constraintEnd_toEndOf="@id/addProfilePicture"
+            app:layout_constraintStart_toStartOf="@id/addProfilePicture"
+            app:layout_constraintTop_toTopOf="@id/addProfilePicture"
+            app:shapeAppearance="@style/Octagon"
+            app:srcCompat="@drawable/backround_shape_white" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/addProfilePicture"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:elevation="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_pink_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/Octagon" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="16dp"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/bio"
+            app:layout_constraintStart_toEndOf="@+id/profilePictureBack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Bio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <Button
+            android:id="@+id/editProfile"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/my_purple"
+            android:fontFamily="@font/caviar_dreams_bold"
+            android:letterSpacing="0.1"
+            android:text="Edit Profile"
+            android:textColor="@color/my_white"
+            android:textSize="16sp"
+            app:icon="@drawable/edit_icon"
+            app:iconGravity="end"
+            app:iconTint="@color/my_white"
+            app:layout_constraintBottom_toBottomOf="@+id/profilePictureBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.84"
+            app:layout_constraintStart_toEndOf="@+id/profilePictureBack"
+            app:layout_constraintTop_toTopOf="@+id/profilePictureBack"
+            app:shapeAppearance="@style/CutCorners"
+            app:strokeColor="@color/my_white"
+            app:strokeWidth="3dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
